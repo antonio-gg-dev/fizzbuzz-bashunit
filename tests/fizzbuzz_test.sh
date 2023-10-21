@@ -7,3 +7,7 @@ function test_returns_1_when_1_given() {
 function test_returns_2_when_2_given() {
   assert_equals 2 "$(./src/fizzbuzz.sh 2)"
 }
+
+function test_returns_4_when_4_given() {
+  assert_equals 4 "$(./src/fizzbuzz.sh 4)"
+}
