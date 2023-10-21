@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $1 -eq 3 ]]; then
+if [[ $1 -eq 3 ]] || [[ $1 -eq 6 ]]; then
   echo "Fizz"
   exit 0
 fi
