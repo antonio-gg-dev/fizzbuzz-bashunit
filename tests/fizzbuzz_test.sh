@@ -38,3 +38,16 @@ function test_returns_fizz_when_multiple_of_5_given() {
 
   assert_equals "Buzz" "$(./src/fizzbuzz.sh "$number")"
 }
+
+function number_multiple_of_3_and_5_provider() {
+  local numbers=(15 30 45 60)
+
+  echo "${numbers[@]}"
+}
+
+# data_provider number_multiple_of_3_and_5_provider
+function test_returns_fizz_when_multiple_of_3_and_5_given() {
+  local number=$1
+
+  assert_equals "FizzBuzz" "$(./src/fizzbuzz.sh "$number")"
+}
