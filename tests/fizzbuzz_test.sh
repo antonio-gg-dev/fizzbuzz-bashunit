@@ -13,14 +13,15 @@ function test_returns_given_number() {
   assert_equals "$number" "$(./src/fizzbuzz.sh "$number")"
 }
 
-function test_returns_fizz_when_3_given() {
-  assert_equals "Fizz" "$(./src/fizzbuzz.sh 3)"
+function number_multiple_of_3_provider() {
+  local numbers=(3 6 9 12)
+
+  echo "${numbers[@]}"
 }
 
-function test_returns_fizz_when_6_given() {
-  assert_equals "Fizz" "$(./src/fizzbuzz.sh 6)"
-}
+# data_provider number_multiple_of_3_provider
+function test_returns_fizz_when_multiple_of_3_given() {
+  local number=$1
 
-function test_returns_fizz_when_9_given() {
-  assert_equals "Fizz" "$(./src/fizzbuzz.sh 9)"
+  assert_equals "Fizz" "$(./src/fizzbuzz.sh "$number")"
 }
