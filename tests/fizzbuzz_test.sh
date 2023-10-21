@@ -20,3 +20,7 @@ function test_returns_fizz_when_3_given() {
 function test_returns_fizz_when_6_given() {
   assert_equals "Fizz" "$(./src/fizzbuzz.sh 6)"
 }
+
+function test_returns_fizz_when_9_given() {
+  assert_equals "Fizz" "$(./src/fizzbuzz.sh 9)"
+}
