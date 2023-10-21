@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function number_provider() {
-  local numbers=(1 2 4)
+  local numbers=(1 2 4 7 8 11 13 14)
 
   echo "${numbers[@]}"
 }
