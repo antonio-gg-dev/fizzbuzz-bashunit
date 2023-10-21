@@ -12,3 +12,7 @@ function test_returns_given_number() {
 
   assert_equals "$number" "$(./src/fizzbuzz.sh "$number")"
 }
+
+function test_returns_fizz_when_3_given() {
+  assert_equals "Fizz" "$(./src/fizzbuzz.sh 3)"
+}
