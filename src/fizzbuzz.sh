@@ -7,4 +7,9 @@ if (( "$number" % 3 == 0 )); then
   exit 0
 fi
 
+if (( "$number" % 5 == 0 )); then
+  echo "Buzz"
+  exit 0
+fi
+
 echo "$number"
