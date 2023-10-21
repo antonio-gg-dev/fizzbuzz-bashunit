@@ -1,13 +1,14 @@
 #!/bin/bash
 
-function test_returns_1_when_1_given() {
-  assert_equals 1 "$(./src/fizzbuzz.sh 1)"
+function number_provider() {
+  local numbers=(1 2 4)
+
+  echo "${numbers[@]}"
 }
 
-function test_returns_2_when_2_given() {
-  assert_equals 2 "$(./src/fizzbuzz.sh 2)"
-}
+# data_provider number_provider
+function test_returns_given_number() {
+  local number=$1
 
-function test_returns_4_when_4_given() {
-  assert_equals 4 "$(./src/fizzbuzz.sh 4)"
+  assert_equals "$number" "$(./src/fizzbuzz.sh "$number")"
 }
