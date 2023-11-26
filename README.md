@@ -1,23 +1,23 @@
-# Kata FizzBuzz con bashunit
+# FizzBuzz Kata with bashunit
 
-Esta kata está diseñada para ser una de las primeras katas para el aprendizaje de TDD.
-Además, en este proyecto la voy a utilizar para mostrar como trabajar con bashunit.
+This kata is designed to be one of the first katas for learning TDD.
+Additionally, in this project, I will use it to demonstrate how to work with bashunit.
 
-Enfatizaremos lo siguiente:
-- Comenzaremos escribiendo una prueba fallida para el comportamiento más simple.
-- Implementaremos la cantidad más simple de código necesario para hacer que la prueba pase.
-- A medida que añadamos más pruebas, refactorizaremos para hacer que el código sea más genérico y adecuado.
+We will emphasize the following:
+- We will start by writing a failing test for the simplest behavior.
+- We will implement the simplest amount of code necessary to make the test pass.
+- As we add more tests, we will refactor to make the code more generic and appropriate.
 
-## Instrucciones
+## Instructions
 
-Escribir un script que tome como argumento un número positivo, como resultado lo imprimirá por pantalla.
+Write a script that takes a positive number as an argument and prints the result to the screen.
 
-Nuestro script deberá cumplir además las siguientes reglas:
-- Si el número es múltiplo de tres, el resultado será "Fizz".
-- Si el número es múltiplo de cinco, el resultado será "Buzz".
-- Si el número es múltiplo de tres y cinco simultáneamente, el resultado será "FizzBuzz".
+Our script must also comply with the following rules:
+- If the number is a multiple of three, the result will be "Fizz".
+- If the number is a multiple of five, the result will be "Buzz".
+- If the number is a multiple of both three and five simultaneously, the result will be "FizzBuzz".
 
-Ejemplo, si le pedimos los números del 1 al 15 en orden, el script nos debería devolver:
+For example, if we request the numbers from 1 to 15 in order, the script should return:
 ```
 1
 2
